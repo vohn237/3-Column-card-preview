@@ -1,0 +1,167 @@
+/*=== GLOBALS =========================*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 0.938rem 'Lexend Deca', sans-serif;
+  line-height: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=== VARIABLES =========================*/
+:root {
+  /* Primary */
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral */
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+/*=== COLORS =========================*/
+.sedans {
+  background: var(--Bright-orange);
+}
+
+.suvs {
+  background: var(--Dark-cyan);
+}
+
+.luxury {
+  background: var(--Very-dark-cyan);
+}
+
+h2 {
+  color: var(--Very-light-gray);
+}
+
+.cards__button a {
+  background: var(--Very-light-gray);
+}
+
+p {
+  color: var(--Transparent-white);
+}
+
+/*=== LAYOUT =========================*/
+.wrapper {
+  margin: 5rem 1.4rem;
+}
+
+/*=== STYLES =========================*/
+#cards {
+  padding: 2.933rem 3.067rem;
+}
+
+.sedans {
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+
+#cards .cards__icon i img {
+  height: 2.667rem;
+  width: 4rem;
+  margin-bottom: 2.267rem;
+}
+
+#cards .cards__text .title {
+  font: 700 2.5rem 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+#cards .cards__text p {
+  margin-bottom: 1.6rem;
+}
+
+.sedans .cards__button a {
+  color: var(--Bright-orange);
+}
+
+#cards .cards__button a {
+  display: inline-block;
+  padding: 0.75rem 1.8rem;
+  border: 2px solid;
+  border-radius: 35px;
+  transition: background 400ms;
+}
+
+#cards .cards__button a:hover {
+  background: transparent;
+  border: 2px solid var(--Very-light-gray);
+  color: var(--Very-light-gray);
+}
+
+.suvs .cards__button a {
+  color: var(--Dark-cyan);
+}
+
+.luxury {
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+}
+
+.luxury .cards__button a {
+  color: var(--Very-dark-cyan);
+}
+
+#footer .attribution {
+  font-size: 12px;
+  text-align: center;
+}
+
+#footer .attribution a {
+  color: hsl(228, 45%, 44%);
+  transition: background 300ms;
+  padding: 1px;
+  border-radius: 5%;
+}
+
+#footer .attribution a:hover {
+  background: hsl(0, 0%, 22%);
+  color: #fff;
+}
+
+/*=== RESPONSIVE =========================*/
+@media screen and (min-width: 992px) {
+  /* Layout */
+  .wrapper {
+    max-width: 1000px;
+    display: flex;
+    margin: 7rem auto 0;
+  }
+
+  /* Styles */
+  #cards {
+    padding: 2.933rem 3.5rem 2.933rem 3.067rem;
+  }
+
+  #cards .cards__text {
+    width: 13.2rem;
+  }
+
+  #cards .cards__text p {
+    margin-bottom: 5.467rem;
+  }
+
+  .sedans {
+    border-top-left-radius: 2%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 2%;
+  }
+
+  .luxury {
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 2%;
+    border-top-right-radius: 2%;
+  }
+}
